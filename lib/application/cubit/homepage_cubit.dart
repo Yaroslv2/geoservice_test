@@ -9,10 +9,7 @@ class HomePageCubit extends Cubit<HomePageState> {
 
   Future add(xCoord, yCoord, zoom) async {
     emit(HomePageLoadingState());
-    print(xCoord.runtimeType);
     var tileCoords = coordsCalculate(xCoord, yCoord, zoom);
-
-    print(tileCoords);
 
     emit(
       HomePageLoadedSuccess(

@@ -3,8 +3,6 @@ import 'dart:math';
 Map<String, int> coordsCalculate(double lat, double long, int zoom) {
   const eccentricity = 0.0818191908426;
 
-  print(long);
-
   var p = pow(2, zoom + 8) / 2;
 
   var beta = lat * pi / 180;

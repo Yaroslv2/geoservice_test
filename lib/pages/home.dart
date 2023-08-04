@@ -160,7 +160,7 @@ class _CoordFormFieldState extends State<CoordFormField> {
             ),
             SizedBox(
               width: _screenWidth * 0.15,
-              height: _screenHeight * 0.05,
+              height: _screenHeight * 0.06,
               child: TextButton(
                 onPressed: () {
                   if (keyForm.currentState!.validate()) {
